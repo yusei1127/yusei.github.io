@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+/* {
+	outline: 1px solid magenta;
+}
+*/
+@media screen and (min-width: 997px) {
+html {
+height: 100%;
+}
+.port {
+  padding-top: 10vw;
+  background-color: #F6F6F6;
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  padding-bottom: 6rem;
+}
+.main_port {
+  display: flex;
+  justify-content: space-between;
+}
+.openmodal_button {
+  margin-top: 2.3vw;
+  margin-bottom: 4.5vw;
+  display: flex;
+  background-color: rgba(0,0,0,0.8);
+  padding : 0.3rem 1rem 0.4rem 1rem;
+  border-radius: 0.5rem;
+  width: auto;
+}
+.openmodal_button p {
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  margin-left: 0.6rem;
+  color: white;
+}
+.openmodal_button img {
+  border: none;
+  max-width: 100%;
+  width: 1rem;
+}
+.grid_port {
+	display: grid;
+	gap: 4rem;
+	grid-template-columns: repeat(2,1fr);
+	margin-bottom: 3vw;
+  margin-top: 5vw;
+}
+.item_port h5 {
+  font-size: 1rem;
+  color: #454545;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+.item_port img {
+
+}
+.title_port h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #2C2C2C;
+  font-size: 2.4rem;
+  line-height: 1.8rem;
+}
+.port3 h1 {
+  font-weight: 900;
+  color: #2C2C2C;
+  font-size: 1.8rem;
+  line-height: 0.1rem;
+}
+.title_port {
+  margin-top: 2.3vw;
+  display: block;
+}
+.title_port2 {
+  display: none;
+  font-size: 3rem;
+}
+.title_port2 span {
+ font-size: 3rem;
+}
+.title_port span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777777;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.6rem;
+}
+
+/*ポップアップ************************************************/
+.button {
+position: absolute;
+border: none;
+background-color: rgba(0, 0, 0, 0);
+z-index: 1;
+width: 47.5%;
+height: 27vw;
+}
+.button:hover {
+cursor: pointer;
+}
+.button2 {
+position: absolute;
+border: none;
+background-color: rgba(0, 0, 0, 0);
+z-index: 1;
+text-align: right;
+margin-top: 2.3rem;
+margin-left: 93%;
+width: 7%;
+height: 2.2vw;
+margin-bottom: 4.5rem;
+}
+.button2:hover {
+cursor: pointer;
+}
+.modalScroll,
+.ScrollContent {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.modal {
+display: none;
+height: 100vh;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 10;
+}
+.modal_bg {
+background: rgba(0, 0, 0, 0.5);
+height: 100%;
+position: absolute;
+width: 100%;
+}
+.Xbutton {
+position: fixed;
+margin-left: 90%;
+margin-top: 6vh;
+color: #fff;
+display: grid;
+width: 2.5rem;
+height: 2.5rem;
+border-radius: 20rem;
+background: rgba(0,0,0,0.8);
+place-items: center;
+}
+.Xbutton img {
+width: 0.8rem;
+height: 0.8rem;
+}
+.modalScroll {
+background: rgba(0, 0, 0, 0);
+width: 70%;
+height: 90%;
+padding: 1rem;
+}
+.ScrollContent {
+overflow-y: scroll;
+height: 100%;
+width: 100%;
+}
+.modal_content img,
+.modal_content {
+text-align: center;
+text-align: center;
+max-width: 100%;
+margin-bottom: 1.5rem;
+}
+.portfolioname {
+  color: #2C2C2C;
+}
+.gpblname {
+  color: #2C2C2C;
+}
+.soturonname {
+  color: #2C2C2C;
+}
+/*ポップアップ************************************************/
+
+/*フッター***************************************************/
+
+}
+/*フッター***************************************************/
