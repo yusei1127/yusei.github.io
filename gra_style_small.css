@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* {
+	outline: 1px solid magenta;
+}
+*/
+
+
+html {
+  font-size:1vw;
+}
+body {
+
+}
+
+@media screen and (max-width: 996px){
+  .gra_home {
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    height: auto;
+    padding-top: 25vw;
+    z-index: 1;
+    margin-bottom: 2rem;
+  }
+
+  /*
+  <div class="pdf">
+    <a href="./Graduationthesis.pdf"><h1>aa</h1></a>
+  </div>
+  */
+
+  .gra_title {
+    position:relative;
+    display: block;
+  }
+  .a1 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-size: 3rem;
+    color: #C1C1C1;
+    padding-bottom: 0.5rem;
+  }
+  .a2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-style: normal;
+    font-size: 4rem;
+    color: #292929;
+  }
+  .a3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #292929;
+    font-size: 3.5rem;
+  }
+  .a4 {
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .a4 img {
+    max-width: 100%;
+    width: 1.5rem;
+    padding-left: 0.3rem;
+  }
+  .a4 {
+    padding-top: 3rem;
+  }
+  .c1,.c2,.c3 {
+    font-size: 3rem;
+    margin-right: 1.5rem;
+    padding-right: 1.5rem;
+    border-right: solid 1px #C1C1C1;
+    text-decoration: none;
+    color: #292929;
+  }
+  a {
+    text-decoration: none;
+  }
+
