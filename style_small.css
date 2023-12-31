@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* {
+	outline: 1px solid magenta;
+}
+*/
+
+
+html {
+  font-size:1vw;
+}
+body {
+
+}
+
+@media screen and (max-width: 996px){
+/*ヘッダー******************************************************/
+.page-head_main2 {
+  position: fixed;
+  width: 100%;
+  background-color: #F6F6F6;
+  z-index: 2;
+  height: 21.4vw;
+}
+.page-head_main {
+  display: none;
+}
+.a1 {
+  padding-top: 12rem;
+}
+.page-header2 {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 82%;
+  height: 5vw;
+  margin-left: 9%;
+	padding-bottom: 1.3vw;
+  border-bottom: solid 1px black;
+  padding-top: 15vw;
+}
+.page-header {
+  display: none;
+}
+.page-header2 a {
+  font-size: 2rem;
+  z-index: 10;
+  margin-top:0;
+}
+.page-header2 span {
+  font-size: 2rem;
+  z-index: 10;
+  margin-top:0;
+}
+.header_contents {
+  display: none;
+}
+/*ハンバーガー******************************************************/
+.hamburger-menu {
+  z-index: 4;
+  display: flex;
+  position: relative;
+  width: 3rem;
+}
+label:hover {
+   cursor: pointer;
+}
+.menu-btn {
+  z-index: 4;
+  display: flex;
+  position: absolute;
+  height: 3vw;
+  width: 3vw;
+  justify-content: center;
+  align-items: center;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+  content: '';
+  display: block;
+  height: 0.1vw;
+  width: 3vw;
+  background-color: #121212;
+  position: absolute;
+}
+.menu-btn span:before {
+    bottom: 1vw;
+}
+.menu-btn span:after {
+    top: 1vw;
+}
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+#menu-btn-check {
+    display: none;
+}
+
+.menu-content {
+    width: 60%;
+    height: 100%;
+    padding-left: 10%;
+    padding-top: 15vh;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    z-index: 3;
+    background-color: #F6F6F6;
+    transition: all 0.5s;/*アニメーション設定*/
+}
+.menu-content ul {
+
+}
+.menu-content ul li {
+
+}
+.menu-content li a:hover {
+  color: #D2D2D2;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 3rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    border-bottom: solid 1px #c0c0c0;
+    box-sizing: border-box;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+.menu-content ul li a::before {
+}
+#menu-btn-check:checked ~ .menu-content {
+    left: 40%;/*メニューを画面内へ*/
+}
+/*ハンバーガー******************************************************/
+.header_icon a {
+  text-decoration: none;
+  color: #2C2C2C;
+  font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 500;
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+}
+.header_icon a:hover {
+  color: #dadada;
+}
+.header_icon_back a {
+  text-decoration: none;
+  font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 500;
+  padding: 0;
+  margin: 0;
+}
+.port img,.home img,.area img,.port3 img {
+  max-width: 100%;
+  border-radius: 2rem;
+  box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, .11);
+}
+.port img:hover,.home img:hover,.area img:hover,.port3 img:hover {
+  transform: scale(0.99);
+  transition: 0.1s;
+}
+ul {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+.header_contents {
+  display: flex;
+  font-size: 0.98rem;
+  width: 24.8rem;
+  float: right;
+}
+.header_contents a {
+  margin-left: 15%;
+  text-decoration: none;
+  font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 500;
+}
+.header_contents a:hover {
+  color: #2c2c2c;
+}
+.background {
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F6F6F6;
+}
+/*ヘッダー******************************************************/
+
+/*ホーム*******************************************************/
+
+/*ホーム*******************************************************/
+
+/*ポートフォリオ************************************************/
+.area {
+  background-color: #F6F6F6;
+	position: relative;
+  width: 80%;
+	height: auto;
+  margin-left: 10%;
+	padding-bottom: 1vw;
+  padding-top: 13vw;
+}
+
+h4 {
+  color: #2C2C2C;
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+}
+.grid {
+  display: grid;
+  gap: 3rem;
+	grid-template-columns: repeat(1,1fr);
+  margin-bottom: 10%;
+  padding-top: 18rem;
+}
+.item a {
+	list-style: none;
+	text-decoration: none;
+}
+.name {
+  color: #777777;
+  font-size: 3rem;
+  padding-bottom: 10rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 1rem;
+  list-style: none;
+}
+.item h2 {
+  color: #292929;
+  font-weight: 600;
+  font-size: 5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 3.5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+.item {
+	z-index: 0;
+}
+.gpbl_subtop {
+  padding-top: 12vw;
+  font-size: 1.5rem;
+}
+.gpbl_subtop {
+  color: #C1C1C1;
+}
+.gpbl_maintop {
+  font-size: 3.5rem;
+  color: #292929;
+}
+.gpbl_sub2top {
+  font-size: 1.5rem;
+}
+.gpbl_rink {
+  width: 7rem;
+  margin-top: 1.5rem;
+  color: #292929;
+  font-size: 1.5rem;
+}
+.gpbl_rink img {
+  width: 1.6rem;
+  padding-left: 0.5rem;
+}
+
+/*ポートフォリオ************************************************/
+
+/*フッター*/
+.end_contents_back {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #292929;
+}
+.end_contents_main {
+  width: 50%;
+  padding-left: 25%;
+  padding-top: 8rem;
+  text-align: center;
+}
+.end_contents_title {
+  color: white;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-bottom: 8rem;
+}
+.end_contents_rink {
+  display: none;
+}
+
+}
