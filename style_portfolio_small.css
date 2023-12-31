@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+/* {
+	outline: 1px solid magenta;
+}
+*/
+
+@media screen and (max-width: 996px){
+html {
+height: 100%;
+}
+.menu-content a {
+  color: #2C2C2C;
+}
+.main_port {
+  margin-bottom: 10rem;
+}
+.grid_port {
+  display: block;
+  margin-bottom: 3vw;
+  margin-top: 5vw;
+}
+.port {
+  padding-top: 35vw;
+  background-color: #F6F6F6;
+  position: relative;
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  padding-bottom: 6rem;
+}
+.title_port2 h1 {
+  font-size: 6rem;
+	margin-top: 6rem;
+  line-height: 4rem;
+  margin-bottom: 0.5rem;
+}
+.title_port2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 3vw;
+  display: block;
+}
+.title_port2 span {
+  font-size: 3rem;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #777777;
+}
+.title_port {
+  display: none;
+}
+.item_port {
+  padding-bottom: 8rem;
+}
+.openmodal_button {
+  display: none;
+}
+input {
+  display: none;
+}
+.button {
+  display: none;
+}
+.button2 {
+  display: none;
+}
+.modal {
+  display: none;
+}
+
+
+
+}
