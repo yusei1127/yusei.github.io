@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 997px) {
+.header_icon_back a {
+  color: #2d2d2d;
+}
+
+.plo1 {
+  position: relative;
+  width: 100%;
+  padding-top: 8vw;
+  background-color: #F6F6F6;
+  padding-bottom: 3%;
+}
+.backimg img {
+  max-width: 100%;
+}
+.backimg2 img {
+  display: none;
+}
+}
